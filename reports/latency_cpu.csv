@@ -1,0 +1,5 @@
+model,ms_per_image_cpu
+smallcnn,2.019
+alexnet,10.259
+vgg16_bn,49.923
+resnet18,8.153

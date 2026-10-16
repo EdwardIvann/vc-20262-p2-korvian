@@ -1,0 +1,5 @@
+model,acc_digit,acc_digit_pow8,acc_reading,imgs_1_erro,imgs_2a3_erros,imgs_4mais_erros
+smallcnn,0.7894,0.1509,0.2567,64,45,30
+alexnet,0.9218,0.5213,0.631,43,20,6
+vgg16_bn,0.9372,0.595,0.7005,37,14,5
+resnet18,0.9606,0.7248,0.8449,17,7,5

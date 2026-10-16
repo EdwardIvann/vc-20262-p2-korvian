@@ -1,0 +1,5 @@
+model,acc_digit_all,acc_digit_sem_so_inteiros,acc_digit_clean,acc_reading_all,acc_reading_sem_so_inteiros,acc_reading_clean
+smallcnn,0.7894,0.7985,0.8046,0.2567,0.2623,0.2652
+alexnet,0.9218,0.9317,0.9372,0.631,0.6448,0.6519
+vgg16_bn,0.9372,0.9467,0.9551,0.7005,0.7158,0.7238
+resnet18,0.9606,0.9706,0.9786,0.8449,0.8634,0.8729

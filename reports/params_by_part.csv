@@ -1,0 +1,11 @@
+model,part,params_M,share
+smallcnn,features (conv),0.2875,0.9955
+smallcnn,classifier (FC),0.0013,0.0045
+alexnet,features (conv),2.4697,0.0433
+alexnet,classifier (FC),54.5751,0.9567
+alexnet,  só a 1ª FC (9216→4096),37.7528,0.6618
+vgg16_bn,features (conv),14.7231,0.1096
+vgg16_bn,classifier (FC),119.5868,0.8904
+vgg16_bn,  só a 1ª FC (25088→4096),102.7645,0.7651
+resnet18,features (conv),11.1765,0.9995
+resnet18,classifier (FC),0.0051,0.0005

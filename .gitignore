@@ -1,0 +1,28 @@
+# Dataset (licença CC BY-NC-ND 4.0) — proibido versionar
+data/
+*.zip
+*.jpg
+*.jpeg
+
+# Recortes gerados e checkpoints
+digits/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Credenciais
+kaggle.json
+.kaggle/
+
+# Ambiente e caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
