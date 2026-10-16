@@ -294,4 +294,41 @@ terceira pista de orientação.
 
 ## Declaração de uso de IA
 
-> **A preencher com o template disponível no Google Classroom da disciplina.**
+**Atividade:** Prática 2 — Classificação de Dígitos de Hidrômetros com CNNs · **Disciplina:** Visão Computacional — VC001 ·
+**Data:** 15/10/2026
+
+| Integrante | E-mail |
+|---|---|
+| Ivan Edward | iers@cesar.school |
+| Elizabete Barbosa | eba@cesar.school |
+| Davi Melo | dam3@cesar.school |
+
+### Seção A — Uso de LLM / Assistente de IA
+
+| Campo | Resposta |
+|---|---|
+| Utilizou IA? | Sim |
+| Modelo(s) usado(s) | Claude Opus 5.5 (`claude-opus-5-5`), via Claude Code (extensão do VS Code), assistente da Anthropic com acesso a terminal e edição de arquivos, operando em modo agente. Commits e publicação no GitHub foram feitos pela equipe. |
+| Motivação de uso | Apoio à implementação e à verificação do projeto e apoio ao estudo: tirar dúvidas técnicas, discutir alternativas de solução e de arquitetura e revisar a documentação, para entregar com mais qualidade técnica dentro do prazo, mantendo com a equipe as decisões e a análise. |
+| Resumo do uso | A IA atuou como assistente de programação e de estudo. Sob direção da equipe, implementou o código do notebook (aquisição e integridade, retificação da faixa, correção de orientação, treino com o protocolo único, avaliação e figuras) e o script de checagem da entrega. Também ajudou a investigar os dados: gerou pranchas de inspeção visual e testou e comparou heurísticas de orientação. Explicou conceitos (transfer learning, determinismo na GPU, métricas) e apontou armadilhas, como os artefatos de float no `data.csv` e os polígonos que cobrem só a parte inteira. Por fim, fez verificações independentes da entrega (requisitos do roteiro, números do README contra os artefatos e revisão do código). As decisões ficaram com a equipe: organização do repositório, escopo, interpretação dos pontos ambíguos do roteiro e aceitação ou não de cada sugestão. |
+| Trecho/resultado incorporado à entrega | Código do `pratica_watermeters.ipynb` e do `scripts/check_entrega.py`; figuras e relatórios gerados pelo notebook; texto do README, a partir do rascunho revisado pela equipe. |
+| Adaptações/validações realizadas pela equipe | A equipe executou o notebook, conferiu os números do README contra `results.csv` e `reports/` (inclusive com o script de checagem), revisou e reescreveu as respostas às questões, discutiu os pontos de dúvida levantados nas notas técnicas e conferiu que nenhuma imagem do dataset, recorte ou checkpoint foi versionado. |
+
+### Seção B — Uso de Skill (Claude Code / SKILL.md)
+
+| Campo | Resposta |
+|---|---|
+| Utilizou skill? | Sim, apenas uma skill embutida do Claude Code (`dataviz`, diretrizes de visualização), consultada para padronizar as figuras (paleta, marcadores e legibilidade). Nenhuma skill de projeto (SKILL.md) customizada foi criada ou usada. |
+
+### Seção C — Uso de SDD (System Design Document)
+
+| Campo | Resposta |
+|---|---|
+| Utilizou SDD? | Não. |
+
+**Declaração de responsabilidade.** Declaramos que as informações prestadas nesta declaração são verdadeiras e completas,
+que compreendemos e somos responsáveis por todo o conteúdo entregue, incluindo as partes em que o assistente de IA
+gerou ou adaptou código, e que estamos cientes de que a omissão do uso de IA configura conduta academicamente
+desonesta, conforme a política da disciplina.
+
+Ivan Edward · Elizabete Barbosa · Davi Melo
