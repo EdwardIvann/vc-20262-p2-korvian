@@ -18,17 +18,17 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 pip install -r requirements.txt
 # opcional: kaggle.json em ~/.kaggle/ (sem credencial, o notebook usa o endpoint público da API do Kaggle)
 jupyter nbconvert --to notebook --execute --inplace pratica_watermeters.ipynb   # ou "Run All" no Jupyter
-python scripts/check_entrega.py --strip   # limpa as saídas com imagens do dataset e valida a entrega
 ```
 
 Execute a partir da raiz do repositório (o notebook usa caminhos relativos; no Colab: `!git clone <url>` e
 `%cd <repositório>` antes de rodar). O notebook baixa o dataset para `data/` (se ainda não existir), gera `digits/` (recortes + `index.csv`),
 `checkpoints/`, `history_*.csv`, `results.csv`, `figures/` e `reports/`. As pastas `data/`, `digits/` e
-`checkpoints/` estão no `.gitignore`.
+`checkpoints/` estão no `.gitignore`. As células marcadas com a tag `dataset-image` exibem imagens do dataset e
+têm a saída limpa antes de qualquer commit.
 
 - Ambiente usado: local, Windows 10, Python 3.13, PyTorch 2.11 + CUDA 12.8, GPU **NVIDIA GeForce RTX 4070 SUPER (12 GB)**
 - Tempo total de execução do notebook: **≈ 9,5 min** (treino dos quatro modelos: ≈ 7 min)
-- Split utilizado: `splits.csv` **oficial** fornecido pelo professor (não alterado; SHA-256 `ca4c5d8a…abf2b`, conferido pelo script)
+- Split utilizado: `splits.csv` **oficial** fornecido pelo professor (não alterado; SHA-256 `ca4c5d8a…abf2b`, idêntico ao do repositório do professor)
 
 ## Protocolo de treino
 
@@ -310,9 +310,9 @@ terceira pista de orientação.
 | Utilizou IA? | Sim |
 | Modelo(s) usado(s) | Claude Opus 5.5 (`claude-opus-5-5`), via Claude Code (extensão do VS Code), assistente da Anthropic com acesso a terminal e edição de arquivos, operando em modo agente. Commits e publicação no GitHub foram feitos pela equipe. |
 | Motivação de uso | Apoio à implementação e à verificação do projeto e apoio ao estudo: tirar dúvidas técnicas, discutir alternativas de solução e de arquitetura e revisar a documentação, para entregar com mais qualidade técnica dentro do prazo, mantendo com a equipe as decisões e a análise. |
-| Resumo do uso | A IA atuou como assistente de programação e de estudo. Sob direção da equipe, implementou o código do notebook (aquisição e integridade, retificação da faixa, correção de orientação, treino com o protocolo único, avaliação e figuras) e o script de checagem da entrega. Também ajudou a investigar os dados: gerou pranchas de inspeção visual e testou e comparou heurísticas de orientação. Explicou conceitos (transfer learning, determinismo na GPU, métricas) e apontou armadilhas, como os artefatos de float no `data.csv` e os polígonos que cobrem só a parte inteira. Por fim, fez verificações independentes da entrega (requisitos do roteiro, números do README contra os artefatos e revisão do código). As decisões ficaram com a equipe: organização do repositório, escopo, interpretação dos pontos ambíguos do roteiro e aceitação ou não de cada sugestão. |
-| Trecho/resultado incorporado à entrega | Código do `pratica_watermeters.ipynb` e do `scripts/check_entrega.py`; figuras e relatórios gerados pelo notebook; texto do README, a partir do rascunho revisado pela equipe. |
-| Adaptações/validações realizadas pela equipe | A equipe executou o notebook, conferiu os números do README contra `results.csv` e `reports/` (inclusive com o script de checagem), revisou e reescreveu as respostas às questões, discutiu os pontos de dúvida levantados nas notas técnicas e conferiu que nenhuma imagem do dataset, recorte ou checkpoint foi versionado. |
+| Resumo do uso | A IA atuou como assistente de programação e de estudo. Sob direção da equipe, implementou o código do notebook (aquisição e integridade, retificação da faixa, correção de orientação, treino com o protocolo único, avaliação e figuras), além de um script local de checagem da entrega (não versionado). Também ajudou a investigar os dados: gerou pranchas de inspeção visual e testou e comparou heurísticas de orientação. Explicou conceitos (transfer learning, determinismo na GPU, métricas) e apontou armadilhas, como os artefatos de float no `data.csv` e os polígonos que cobrem só a parte inteira. Por fim, fez verificações independentes da entrega (requisitos do roteiro, números do README contra os artefatos e revisão do código). As decisões ficaram com a equipe: organização do repositório, escopo, interpretação dos pontos ambíguos do roteiro e aceitação ou não de cada sugestão. |
+| Trecho/resultado incorporado à entrega | Código do `pratica_watermeters.ipynb`; figuras e relatórios gerados pelo notebook; texto do README, a partir do rascunho revisado pela equipe. |
+| Adaptações/validações realizadas pela equipe | A equipe executou o notebook, conferiu os números do README contra `results.csv` e `reports/` (inclusive com um script local de checagem), revisou e reescreveu as respostas às questões, discutiu os pontos de dúvida levantados nas notas técnicas e conferiu que nenhuma imagem do dataset, recorte ou checkpoint foi versionado. |
 
 ### Seção B — Uso de Skill (Claude Code / SKILL.md)
 
